@@ -1,0 +1,15 @@
+CREATE DATABASE startersql;
+USE startersql;
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+ user_name VARCHAR(100) NOT NULL,
+ email VARCHAR(100) UNIQUE NOT NULL,
+ gender ENUM('Male', 'Female', 'Other'),
+ date_of_birth DATE,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+Select * from users;
+
+
