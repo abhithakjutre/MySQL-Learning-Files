@@ -1,0 +1,131 @@
+-- CREATE DATABASE manthan_it;
+USE manthan_it;
+
+-- CREATE TABLE employees_data (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     name VARCHAR(255) NOT NULL,
+--     email VARCHAR(255) UNIQUE NOT NULL,
+--     password VARCHAR(255) NOT NULL,
+--     department ENUM('IT','SALES','SUPPORT') NOT NULL,
+--     dob DATE,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     current_status ENUM('active', 'inactive') DEFAULT 'active'
+-- );
+ 
+ 
+ -- INSERT DATA IN THIS TABLE 
+-- INSERT INTO employees_data (name, email, password, department, dob, current_status)
+-- VALUES
+-- ('Amit Sharma', 'amit1@example.com', 'pass123', 'IT', '1995-03-12', 'active'),
+-- ('Rahul Verma', 'rahul2@example.com', 'pass123', 'Sales', '1994-11-21', 'active'),
+-- ('Priya Singh', 'priya3@example.com', 'pass123', 'Support', '1997-07-15', 'inactive'),
+-- ('Neha Gupta', 'neha4@example.com', 'pass123', 'IT', '1998-02-09', 'active'),
+-- ('Rohit Kumar', 'rohit5@example.com', 'pass123', 'Sales', '1993-08-30', 'active'),
+-- ('Suman Tiwari', 'suman6@example.com', 'pass123', 'Support', '1996-04-18', 'inactive'),
+-- ('Vikas Yadav', 'vikas7@example.com', 'pass123', 'IT', '1995-12-25', 'active'),
+-- ('Anjali Mehta', 'anjali8@example.com', 'pass123', 'Sales', '1997-03-06', 'active'),
+-- ('Karan Patel', 'karan9@example.com', 'pass123', 'Support', '1992-10-14', 'inactive'),
+-- ('Deepak Rana', 'deepak10@example.com', 'pass123', 'IT', '1994-01-19', 'active'),
+
+-- ('Meena Joshi', 'meena11@example.com', 'pass123', 'Sales', '1998-06-11', 'active'),
+-- ('Suresh Chauhan', 'suresh12@example.com', 'pass123', 'Support', '1993-09-22', 'inactive'),
+-- ('Latika Jain', 'latika13@example.com', 'pass123', 'IT', '1995-04-27', 'active'),
+-- ('Harshit Saxena', 'harshit14@example.com', 'pass123', 'Sales', '1997-01-31', 'active'),
+-- ('Pooja Rajput', 'pooja15@example.com', 'pass123', 'Support', '1998-12-17', 'inactive'),
+-- ('Arjun Desai', 'arjun16@example.com', 'pass123', 'IT', '1996-05-03', 'active'),
+-- ('Simran Kaur', 'simran17@example.com', 'pass123', 'Sales', '1995-10-29', 'active'),
+-- ('Mohit Sinha', 'mohit18@example.com', 'pass123', 'Support', '1993-07-08', 'inactive'),
+-- ('Riya Thakur', 'riya19@example.com', 'pass123', 'IT', '1997-08-19', 'active'),
+-- ('Nikhil Bansal', 'nikhil20@example.com', 'pass123', 'Sales', '1994-03-24', 'active'),
+
+-- ('Divya Kapoor', 'divya21@example.com', 'pass123', 'Support', '1998-04-01', 'active'),
+-- ('Shivam Pandey', 'shivam22@example.com', 'pass123', 'IT', '1996-11-12', 'inactive'),
+-- ('Ayesha Ali', 'ayesha23@example.com', 'pass123', 'Sales', '1997-09-25', 'active'),
+-- ('Ramesh Nair', 'ramesh24@example.com', 'pass123', 'Support', '1993-02-05', 'active'),
+-- ('Sneha Pawar', 'sneha25@example.com', 'pass123', 'IT', '1994-12-09', 'active'),
+-- ('Ajay Malhotra', 'ajay26@example.com', 'pass123', 'Sales', '1995-06-20', 'inactive'),
+-- ('Tanvi Shah', 'tanvi27@example.com', 'pass123', 'Support', '1998-01-16', 'active'),
+-- ('Kunal Jadhav', 'kunal28@example.com', 'pass123', 'IT', '1992-04-10', 'active'),
+-- ('Payal Sethi', 'payal29@example.com', 'pass123', 'Sales', '1995-07-27', 'active'),
+-- ('Jatin Khanna', 'jatin30@example.com', 'pass123', 'Support', '1996-05-14', 'inactive'),
+
+-- ('Radhika Iyer', 'radhika31@example.com', 'pass123', 'IT', '1993-09-03', 'active'),
+-- ('Sagar Mishra', 'sagar32@example.com', 'pass123', 'Sales', '1994-06-15', 'inactive'),
+-- ('Geeta Rawat', 'geeta33@example.com', 'pass123', 'Support', '1997-02-25', 'active'),
+-- ('Vivek Thapa', 'vivek34@example.com', 'pass123', 'IT', '1998-03-09', 'active'),
+-- ('Sonam Luthra', 'sonam35@example.com', 'pass123', 'Sales', '1995-11-18', 'inactive'),
+-- ('Aditya Chauhan', 'aditya36@example.com', 'pass123', 'Support', '1992-08-07', 'active'),
+-- ('Nidhi Pande', 'nidhi37@example.com', 'pass123', 'IT', '1997-12-29', 'active'),
+-- ('Tarun Kohli', 'tarun38@example.com', 'pass123', 'Sales', '1994-01-23', 'inactive'),
+-- ('Shalini Reddy', 'shalini39@example.com', 'pass123', 'Support', '1993-10-30', 'active'),
+-- ('Vinit Shetty', 'vinit40@example.com', 'pass123', 'IT', '1996-09-11', 'active'),
+
+-- ('Harsha Nagpal', 'harsha41@example.com', 'pass123', 'Sales', '1995-05-05', 'active'),
+-- ('Kabir Gill', 'kabir42@example.com', 'pass123', 'Support', '1997-07-17', 'inactive'),
+-- ('Monika Jain', 'monika43@example.com', 'pass123', 'IT', '1994-02-06', 'active'),
+-- ('Rohini Pal', 'rohini44@example.com', 'pass123', 'Sales', '1998-08-09', 'active'),
+-- ('Sahil Mehra', 'sahil45@example.com', 'pass123', 'Support', '1993-03-28', 'inactive'),
+-- ('Avni Khatri', 'avni46@example.com', 'pass123', 'IT', '1996-12-01', 'active'),
+-- ('Dev Arora', 'dev47@example.com', 'pass123', 'Sales', '1995-01-03', 'active'),
+-- ('Mahima Vora', 'mahima48@example.com', 'pass123', 'Support', '1997-10-15', 'inactive'),
+-- ('Zoya Khan', 'zoya49@example.com', 'pass123', 'IT', '1998-05-06', 'active'),
+-- ('Hardik Joshi', 'hardik50@example.com', 'pass123', 'Sales', '1994-06-21', 'active'),
+
+-- ('Chirag Modi', 'chirag51@example.com', 'pass123', 'Support', '1993-01-05', 'inactive'),
+-- ('Nisha Tyagi', 'nisha52@example.com', 'pass123', 'IT', '1997-04-22', 'active'),
+-- ('Imran Pathan', 'imran53@example.com', 'pass123', 'Sales', '1996-09-14', 'active'),
+-- ('Aman Saxena', 'aman54@example.com', 'pass123', 'Support', '1994-11-27', 'inactive'),
+-- ('Ritika Sood', 'ritika55@example.com', 'pass123', 'IT', '1998-10-02', 'active'),
+-- ('Gaurav Bajaj', 'gaurav56@example.com', 'pass123', 'Sales', '1995-02-26', 'active'),
+-- ('Tulsi Dwivedi', 'tulsi57@example.com', 'pass123', 'Support', '1993-07-19', 'inactive'),
+-- ('Paras Dahiya', 'paras58@example.com', 'pass123', 'IT', '1994-09-09', 'active'),
+-- ('Snehal Patil', 'snehal59@example.com', 'pass123', 'Sales', '1996-05-18', 'inactive'),
+-- ('Rakesh Sagar', 'rakesh60@example.com', 'pass123', 'Support', '1992-02-12', 'active'),
+
+-- ('Bhavna Kapoor', 'bhavna61@example.com', 'pass123', 'IT', '1997-06-23', 'active'),
+-- ('Siddharth Rao', 'siddharth62@example.com', 'pass123', 'Sales', '1995-12-30', 'inactive'),
+-- ('Alisha Bedi', 'alisha63@example.com', 'pass123', 'Support', '1998-04-11', 'active'),
+-- ('Varun Jaiswal', 'varun64@example.com', 'pass123', 'IT', '1993-03-17', 'active'),
+-- ('Kavita Mishra', 'kavita65@example.com', 'pass123', 'Sales', '1994-10-05', 'inactive'),
+-- ('Jayant Dua', 'jayant66@example.com', 'pass123', 'Support', '1996-01-25', 'active'),
+-- ('Esha Malhotra', 'esha67@example.com', 'pass123', 'IT', '1997-07-29', 'active'),
+-- ('Raghav Seth', 'raghav68@example.com', 'pass123', 'Sales', '1995-09-13', 'inactive'),
+-- ('Pritam Nandi', 'pritam69@example.com', 'pass123', 'Support', '1992-06-04', 'active'),
+-- ('Vidhi Suri', 'vidhi70@example.com', 'pass123', 'IT', '1998-01-21', 'active'),
+
+-- ('Arnav Kaul', 'arnav71@example.com', 'pass123', 'Sales', '1994-08-12', 'active'),
+-- ('Mahesh Patra', 'mahesh72@example.com', 'pass123', 'Support', '1993-09-07', 'inactive'),
+-- ('Yashika Ahuja', 'yashika73@example.com', 'pass123', 'IT', '1997-10-14', 'active'),
+-- ('Naveen Rathi', 'naveen74@example.com', 'pass123', 'Sales', '1996-02-29', 'active'),
+-- ('Shreya Bajpai', 'shreya75@example.com', 'pass123', 'Support', '1998-11-02', 'inactive'),
+-- ('Devika Rana', 'devika76@example.com', 'pass123', 'IT', '1994-12-26', 'active'),
+-- ('Samar Gill', 'samar77@example.com', 'pass123', 'Sales', '1995-03-07', 'active'),
+-- ('Tara Khandelwal', 'tara78@example.com', 'pass123', 'Support', '1997-05-21', 'inactive'),
+-- ('Shantanu Bose', 'shantanu79@example.com', 'pass123', 'IT', '1993-08-01', 'active'),
+-- ('Juhi Kohli', 'juhi80@example.com', 'pass123', 'Sales', '1996-12-04', 'active'),
+
+-- ('Aadi Roy', 'aadi81@example.com', 'pass123', 'Support', '1992-09-16', 'inactive'),
+-- ('Kritika Suri', 'kritika82@example.com', 'pass123', 'IT', '1995-07-23', 'active'),
+-- ('Hemant Solanki', 'hemant83@example.com', 'pass123', 'Sales', '1998-02-18', 'active'),
+-- ('Natasha Gill', 'natasha84@example.com', 'pass123', 'Support', '1997-06-12', 'inactive'),
+-- ('Anup Malik', 'anup85@example.com', 'pass123', 'IT', '1994-10-10', 'active'),
+-- ('Reena Sachdeva', 'reena86@example.com', 'pass123', 'Sales', '1995-05-28', 'active'),
+-- ('Virat More', 'virat87@example.com', 'pass123', 'Support', '1993-01-09', 'inactive'),
+-- ('Neeraj Bawa', 'neeraj88@example.com', 'pass123', 'IT', '1996-04-04', 'active'),
+-- ('Farhan Ali', 'farhan89@example.com', 'pass123', 'Sales', '1997-09-14', 'active'),
+-- ('Lavanya Chauhan', 'lavanya90@example.com', 'pass123', 'Support', '1998-03-19', 'inactive'),
+
+-- ('Amruta Deshmukh', 'amruta91@example.com', 'pass123', 'IT', '1994-02-15', 'active'),
+-- ('Rohail Khan', 'rohail92@example.com', 'pass123', 'Sales', '1996-05-01', 'inactive'),
+-- ('Vani Kapoor', 'vani93@example.com', 'pass123', 'Support', '1997-12-08', 'active'),
+-- ('Rehan Juneja', 'rehan94@example.com', 'pass123', 'IT', '1998-08-23', 'active'),
+-- ('Surbhi Sharma', 'surbhi95@example.com', 'pass123', 'Sales', '1993-11-14', 'inactive'),
+-- ('Kabir Chopra', 'kabir96@example.com', 'pass123', 'Support', '1995-01-27', 'active'),
+-- ('Ananya Gupta', 'ananya97@example.com', 'pass123', 'IT', '1996-09-06', 'active'),
+-- ('Dev Singh', 'dev98@example.com', 'pass123', 'Sales', '1994-03-08', 'active'),
+-- ('Rupal Sinha', 'rupal99@example.com', 'pass123', 'Support', '1997-07-29', 'inactive'),
+-- ('Aarav Mehta', 'aarav100@example.com', 'pass123', 'IT', '1995-12-01', 'active');
+
+ select * from employees_data WHERE department='IT' ORDER BY dob ASC LIMIT 5; 
+ 
+ 
